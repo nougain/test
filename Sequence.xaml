@@ -77,7 +77,7 @@
         </usau:BackupSlot>
       </ui:GetOutlookMailMessages.ConnectionDetailsBackupSlot>
     </ui:GetOutlookMailMessages>
-    <If Condition="True" sap:VirtualizedContainerService.HintSize="490,1069" sap2010:WorkflowViewState.IdRef="If_1">
+    <If Condition="False" sap:VirtualizedContainerService.HintSize="490,1069" sap2010:WorkflowViewState.IdRef="If_1">
       <If.Then>
         <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="488,851" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <sap:WorkflowViewStateService.ViewState>
