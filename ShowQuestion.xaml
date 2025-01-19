@@ -1,0 +1,223 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ShowQuestion" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ShowQuestion_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ufa="clr-namespace:UiPath.Forms.Activities;assembly=UiPath.Forms.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Studio.Forms.Runtime</x:String>
+      <x:String>UiPath.Forms.Activities</x:String>
+      <x:String>UiPath.Platform.GlobalVariables</x:String>
+      <x:String>UiPath.Forms.Activities.Base</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Forms.Runtime</AssemblyReference>
+      <AssemblyReference>UiPath.Forms.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="ShowQuestion" sap:VirtualizedContainerService.HintSize="984,1097" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="QuestionText" />
+      <Variable x:TypeArguments="x:String" Name="OptionA" />
+      <Variable x:TypeArguments="x:String" Name="OptionB" />
+      <Variable x:TypeArguments="x:String" Name="OptionC" />
+      <Variable x:TypeArguments="x:String" Name="OptionD" />
+      <Variable x:TypeArguments="x:String" Name="UsersAnswer" />
+      <Variable x:TypeArguments="x:String" Name="CorrectAnswer" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,334" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+      <ui:MultipleAssign.AssignOperations>
+        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[QuestionText]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">How much is 2 + 3?</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[OptionA]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">2</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[OptionB]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">5</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[OptionC]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">7</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[OptionD]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">9</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[UsersAnswer]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">
+                <Literal x:TypeArguments="x:String" Value="" />
+              </InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_7">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[CorrectAnswer]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">B</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+        </scg:List>
+      </ui:MultipleAssign.AssignOperations>
+    </ui:MultipleAssign>
+    <ufa:ShowFormActivity DisplayName="Show Form" FormId="f205fba5-238d-4a48-84ce-999f62d51e9f" sap:VirtualizedContainerService.HintSize="479,218" sap2010:WorkflowViewState.IdRef="ShowFormActivity_1" InstanceName="MCQ" IsAsync="True" Title="MCQ 1/100" WindowState="[UiPath.Studio.Forms.Runtime.WindowState.Normal]">
+      <ufa:ShowFormActivity.Arguments>
+        <OutArgument x:TypeArguments="x:String" x:Key="SelectedOption">[UsersAnswer]</OutArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="CorrectAnswer">["Result: " +CorrectAnswer]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="QuestionText">[QuestionText]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="OptionA">[OptionA]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="OptionB">[OptionB]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="OptionC">[OptionC]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="OptionD">[OptionD]</InArgument>
+      </ufa:ShowFormActivity.Arguments>
+      <ufa:ShowFormActivity.Height>
+        <InArgument x:TypeArguments="s:Nullable(x:Int32)">
+          <Literal x:TypeArguments="s:Nullable(x:Int32)" Value="900" />
+        </InArgument>
+      </ufa:ShowFormActivity.Height>
+      <ufa:ShowFormActivity.Left>
+        <InArgument x:TypeArguments="s:Nullable(x:Int32)">
+          <Literal x:TypeArguments="s:Nullable(x:Int32)" Value="390" />
+        </InArgument>
+      </ufa:ShowFormActivity.Left>
+      <ufa:ShowFormActivity.ShowInTaskbar>
+        <InArgument x:TypeArguments="s:Nullable(x:Boolean)">
+          <Literal x:TypeArguments="s:Nullable(x:Boolean)" Value="True" />
+        </InArgument>
+      </ufa:ShowFormActivity.ShowInTaskbar>
+      <ufa:ShowFormActivity.ShowMargin>
+        <InArgument x:TypeArguments="s:Nullable(x:Boolean)">
+          <Literal x:TypeArguments="s:Nullable(x:Boolean)" Value="True" />
+        </InArgument>
+      </ufa:ShowFormActivity.ShowMargin>
+      <ufa:ShowFormActivity.Top>
+        <InArgument x:TypeArguments="s:Nullable(x:Int32)">
+          <Literal x:TypeArguments="s:Nullable(x:Int32)" Value="140" />
+        </InArgument>
+      </ufa:ShowFormActivity.Top>
+      <ufa:ShowFormActivity.TopMost>
+        <InArgument x:TypeArguments="s:Nullable(x:Boolean)">
+          <Literal x:TypeArguments="s:Nullable(x:Boolean)" Value="True" />
+        </InArgument>
+      </ufa:ShowFormActivity.TopMost>
+      <ufa:ShowFormActivity.Width>
+        <InArgument x:TypeArguments="s:Nullable(x:Int32)">
+          <Literal x:TypeArguments="s:Nullable(x:Int32)" Value="1200" />
+        </InArgument>
+      </ufa:ShowFormActivity.Width>
+    </ufa:ShowFormActivity>
+    <ufa:ChangeFormPropertiesActivity Height="{x:Null}" Left="{x:Null}" ShowMargin="{x:Null}" Title="{x:Null}" Top="{x:Null}" Width="{x:Null}" WindowState="{x:Null}" DisplayName="Change Form Properties" FormId="f205fba5-238d-4a48-84ce-999f62d51e9f" sap:VirtualizedContainerService.HintSize="479,121" sap2010:WorkflowViewState.IdRef="ChangeFormPropertiesActivity_1" InstanceName="MCQ">
+      <ufa:ChangeFormPropertiesActivity.TopMost>
+        <InArgument x:TypeArguments="s:Nullable(x:Boolean)">
+          <Literal x:TypeArguments="s:Nullable(x:Boolean)" Value="True" />
+        </InArgument>
+      </ufa:ChangeFormPropertiesActivity.TopMost>
+    </ufa:ChangeFormPropertiesActivity>
+    <ufa:SetFormFieldsActivity InstanceName="{x:Null}" DisplayName="Set Form Values" FormId="f205fba5-238d-4a48-84ce-999f62d51e9f" sap:VirtualizedContainerService.HintSize="479,172" sap2010:WorkflowViewState.IdRef="SetFormFieldsActivity_1">
+      <ufa:SetFormFieldsActivity.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="SelectedOption">C</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="CorrectAnswer">B</InArgument>
+      </ufa:SetFormFieldsActivity.Arguments>
+    </ufa:SetFormFieldsActivity>
+    <ufa:BringFormToFrontActivity InstanceName="{x:Null}" DisplayName="Bring Form to Foreground" FormId="f205fba5-238d-4a48-84ce-999f62d51e9f" sap:VirtualizedContainerService.HintSize="479,121" sap2010:WorkflowViewState.IdRef="BringFormToFrontActivity_1" />
+    <ui:MessageBox ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" Caption="Selected Option" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="479,108" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[UsersAnswer]" />
+  </Sequence>
+</Activity>
